@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <a href="index.html">Accueil</a>
+        </div>
+
+        <div id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="lien">
+            <a href="article.html">Actualités</a>
+            <a href="blog.html">Divertissements</a>
+            <a href="form.html">Contact</a>
+        </div>
+    </nav>
+
+    <div id="form">
+        <h1>ME CONTACTER</h1>
+        <form action="https://api.web3forms.com/submit" method="POST" class="form-example">
+            <input type="hidden" name="access_key" value="8c28c5d2-b93b-41c6-bc9f-590770671520">
+
+            <div class="form-example">
+                <label for="name">Nom : </label>
+                <input type="text" name="name" id="name" required />
+            </div>
+
+            <div class="form-example">
+                <label for="email">Email : </label>
+                <input type="email" name="email" id="email" required />
+            </div>
+
+            <div class="form-example">
+                <label for="telephone">Téléphone :</label>
+                <input type="telephone" name="telephone" id="telephone" required />
+            </div>
+
+            <div class="form-example">
+                <label for="message">Message : </label>
+                <textarea name="message" id="message" required></textarea>
+            </div>
+
+            <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+
+            <div class="form-example">
+                <input type="submit" value="Envoyer" />
+            </div>
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+
+</html>

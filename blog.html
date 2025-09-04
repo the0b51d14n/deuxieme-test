@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecteur Audio & Vidéo</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <a href="index.html">Accueil</a>
+        </div>
+
+        <div id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="lien">
+            <a href="article.html">Actualités</a>
+            <a href="blog.html">Divertissements</a>
+            <a href="form.html">Contact</a>
+        </div>
+    </nav>
+
+    <h1>Lecteur Audio & Vidéo</h1>
+
+    <div class="media-wrapper">
+        <div class="media-musiques">
+            <h2>Musiques</h2>
+            <section class="media-gallery">
+                <div class="preview-container">
+                    <div class="media-card">
+                        <p class="preview-title">YEAT - ALL NIGHT feat. PLAYBOI CARTI</p>
+                        <audio controls>
+                            <source src="YEAT - ALL NIGHT.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+                    <div class="media-card">
+                        <p class="preview-title">YEAT - ALL RED ﹝ Slowed + Reverb﹞</p>
+                        <audio controls>
+                            <source src="YEAT - ALL RED.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+                    <div class="media-card">
+                        <p class="preview-title">YEAT - COPY MY SOUND</p>
+                        <audio controls>
+                            <source src="YEAT - COPY MY SOUND.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+                    <div class="media-card">
+                        <p class="preview-title">YEAT - Blitz ﹝ Slowed + Reverb﹞</p>
+                        <audio controls>
+                            <source src="YEAT - Blitz.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+                    <div class="media-card">
+                        <p class="preview-title">PLAYBOI CARTI ft. YEAT - FEEL LIKE BOSS</p>
+                        <audio controls>
+                            <source src="FEEL LIKE BOSS.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="media-videos">
+            <h2>Vidéos</h2>
+            <section class="media-gallery">
+                <div class="preview-container">
+                    <div class="media-card">
+                        <p class="preview-title">Eric Reprid - KPOP [Official Video]</p>
+                        <div class="video-wrapper">
+                            <img src="hq720.jpg" alt="Miniature Eric Reprid" class="video-poster">
+                            <iframe src="https://drive.google.com/file/d/17Nbshy1So219pbYS82h2W6_KhMdA2fle/preview" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="media-card">
+                        <p class="preview-title">ARMED AND DANGEROUS X PLAYBOI CARTI ft. YEAT</p>
+                        <div class="video-wrapper">
+                            <img src="sddefault.jpg" alt="Miniature ARMED AND DANGEROUS" class="video-poster">
+                            <iframe src="https://drive.google.com/file/d/1xENC5W0bPCHIxIeOXGIzJfgYioCYlHUk/preview" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div id="now-playing">
+        <span id="now-playing-title">Aucun média en lecture</span>
+    </div>
+
+    <script src="blog.js"></script>
+</body>
+
+</html>
